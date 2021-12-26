@@ -8,15 +8,15 @@ import Product from './Product'
 
 const FeaturedProducts = () => {
 
-  const {products_loading, products_error, featured_products} = useProductsContext();
+  const { products_loading, products_error, featured_products } = useProductsContext();
 
-  if(products_loading) {
+  if (products_loading) {
 
-    
-   return <Loading />
+
+    return <Loading />
 
   }
-  if(products_error) {
+  if (products_error) {
 
     return <Error />
 
@@ -25,12 +25,14 @@ const FeaturedProducts = () => {
 
 
   return <Wrapper className='section'><div className='title'><h2>featured products</h2>
-  <div className='underline'></div></div>
-  <div className="section-center featured">
-    {featured_products.map((product) => {
-      return <Product key={product.id} {...product} />
-    })}</div></Wrapper>
+    <div className='underline'></div></div>
+    <div className="section-center featured">
+      {featured_products.map((product) => {
+        return <Product key={product.id} {...product} />
+      })}</div></Wrapper>
 }
+
+
 
 const Wrapper = styled.section`
   background: var(--clr-grey-10);
