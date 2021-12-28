@@ -1,9 +1,17 @@
 import React from 'react'
 import styled from 'styled-components'
+import products_reducer from '../reducers/products_reducer'
 import Product from './Product'
 
-const GridView = () => {
-  return <h4>Grid View</h4>
+const GridView = ({filtered_products}) => {
+  return <Wrapper><div className='products-container'>
+    
+    {filtered_products.map((product) => {
+      return <Product key={product.id} {...product} />
+
+    })}</div></Wrapper>
+
+
 }
 
 const Wrapper = styled.section`
