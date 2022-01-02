@@ -1,13 +1,15 @@
-# weatherJS
-Simple weather app done with asynchronous Javascript
+# lazy bear furniture eshop
+React application eshop
 
-    Fetch weather information from API using async await
-    Store weather information in local storage 
-    Change city by clicking on modal that upates UI
+    Product information via external API
+    Products showcase with filters and sort
+    Cart and checkout functionality
+    Payment gateway connection via Stripe
+    Authorization via Auth0 API
+    Fully responsive custom CSS 
+    
  
     
-
-
 
 
 ## Notes
