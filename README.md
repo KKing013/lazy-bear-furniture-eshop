@@ -1,4 +1,5 @@
 # lazy bear furniture eshop
+https://lazy-bear-furniture.netlify.app/
 React application eshop
 
     Product information via external API
