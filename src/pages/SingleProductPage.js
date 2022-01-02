@@ -24,7 +24,7 @@ const SingleProductPage = () => {
   useEffect(() => {
 
     fetchSingleProduct(`${url}${id}`)
-   
+    // eslint-disable-next-line
 
   },[id])
 
@@ -35,6 +35,7 @@ const SingleProductPage = () => {
         navigate('/')
       },3000)
     }
+    // eslint-disable-next-line
 
   },[single_product_error])
 

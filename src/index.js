@@ -13,8 +13,8 @@ ReactDOM.render(
     
 
     <Auth0Provider
-        domain='dev-8df1pn47.us.auth0.com'
-        clientId='HNMikAHB6inPl150dcT03uKWQH8kHEkJ'
+        domain={process.env.REACT_APP_AUTH_DOMAIN}
+        clientId={process.env.REACT_APP_AUTH_CLIENT_ID}
         redirectUri={window.location.origin}
         cacheLocation='localstorage'
     >
